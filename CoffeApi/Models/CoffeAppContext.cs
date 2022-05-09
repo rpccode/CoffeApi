@@ -10,6 +10,7 @@ namespace CoffeApi.Models
     {
         public CoffeAppContext()
         {
+            this.ChangeTracker.LazyLoadingEnabled = false;
         }
 
         public CoffeAppContext(DbContextOptions<CoffeAppContext> options)
